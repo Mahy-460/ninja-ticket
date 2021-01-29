@@ -80,3 +80,14 @@ function calculatorTicket(){
     const Total = totalTicketAmount + tax;
     document.getElementById('Total').innerText = Total;
 }
+
+
+const book = document.getElementById('book').addEventListener('click', function(){
+    const body = document.getElementById('body');
+    body.style.display = 'none';
+
+
+    const afterBook = document.getElementById('main');
+    afterBook.style.display = 'block';
+
+});
