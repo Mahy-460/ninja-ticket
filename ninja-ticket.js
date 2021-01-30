@@ -3,14 +3,42 @@
 
 
 const firstTicketPlus = document.getElementById('plus').addEventListener('click', function(){
-    ticketCounte(true);
+    ticketCounte( true);
 });
 
 const firstTicketMinus = document.getElementById('minus').addEventListener('click', function(){
-    ticketCounte(false);
+    ticketCounte( false);
 })
 
-function ticketCounte(Incress){
+
+// function ticketCount( ticket,Incress){
+//     const TicketCount = document.getElementById( ticket + '-counte');
+//     const ticketNumber = parseInt(TicketCount.value);
+
+//    let ticketValue = ticketNumber;
+//    if(Incress == true){
+//        ticketValue = ticketNumber + 1;
+//    }
+//    if(Incress == false && ticketValue > 0){
+//        ticketValue = ticketNumber - 1;
+//    }
+//    TicketCount.value = ticketValue; 
+   
+//    let ticketTotal = 0;
+//    if(ticket == 'first'){
+//         ticketTotal = ticketValue *150;
+//    }
+//    if(ticket == "economy"){
+//        ticketTotal = ticketValue*100;
+//    }
+
+
+
+//     calculatorTicket();
+// }
+
+
+function ticketCounte( Incress){
     const counte = document.getElementById('counte');
     const countNumber = parseInt(counte.value);
 
@@ -53,10 +81,10 @@ function ticketCount(Incress){
    }
     counte.value = counteValue; 
 
-    // const firstAmount = document.getElementById('economyAmount').innerText;
-    // const firstNumber = parseInt(firstAmount.value);
-    // const total = counteValue * 100;
-    // document.getElementById('economyAmount').innerText = total;
+//     // const firstAmount = document.getElementById('economyAmount').innerText;
+//     // const firstNumber = parseInt(firstAmount.value);
+//     // const total = counteValue * 100;
+//     // document.getElementById('economyAmount').innerText = total;
 
 
     calculatorTicket();
