@@ -81,6 +81,7 @@ function calculatorTicket(){
     document.getElementById('Total').innerText = Total;
 }
 
+//----------------------------------------After-Book-------------------------------------
 
 const book = document.getElementById('book').addEventListener('click', function(){
     const body = document.getElementById('body');
@@ -90,4 +91,27 @@ const book = document.getElementById('book').addEventListener('click', function(
     const afterBook = document.getElementById('main');
     afterBook.style.display = 'block';
 
+
+
+    const BookCounte = document.getElementById('counte');
+    const firstCountNumber = parseInt(BookCounte.value);
+
+
+    const bookCounte = document.getElementById('Counte');
+    const economyCountNumber = parseInt(bookCounte.value)
+
+
+    const totalBook = firstCountNumber + economyCountNumber;
+
+
+    document.getElementById('tickets').innerText =  totalBook;
+
+
+    const totalAmountBook = firstCountNumber*150 + economyCountNumber*100;
+    const totalTax =  Math.round(totalAmountBook*0.10);
+    const cashAmount = totalAmountBook + totalTax;
+    document.getElementById('ticketTaka').innerText = cashAmount;
+
 });
+
+
