@@ -23,10 +23,10 @@ function ticketCounte(Incress){
    }
     counte.value = counteValue; 
 
-    const firstAmount = document.getElementById('firstAmount').innerText;
-    const firstNumber = parseInt(firstAmount.value);
-    const total = counteValue * 150;
-    document.getElementById('firstAmount').innerText = total;
+    // const firstAmount = document.getElementById('firstAmount').innerText;
+    // const firstNumber = parseInt(firstAmount.value);
+    // const total = counteValue * 150;
+    // document.getElementById('firstAmount').innerText = total;
     
     calculatorTicket();
 }
@@ -53,10 +53,10 @@ function ticketCount(Incress){
    }
     counte.value = counteValue; 
 
-    const firstAmount = document.getElementById('economyAmount').innerText;
-    const firstNumber = parseInt(firstAmount.value);
-    const total = counteValue * 100;
-    document.getElementById('economyAmount').innerText = total;
+    // const firstAmount = document.getElementById('economyAmount').innerText;
+    // const firstNumber = parseInt(firstAmount.value);
+    // const total = counteValue * 100;
+    // document.getElementById('economyAmount').innerText = total;
 
 
     calculatorTicket();
