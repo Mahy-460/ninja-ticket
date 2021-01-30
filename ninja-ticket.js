@@ -29,10 +29,10 @@ function ticketCounte( Incress){
 
 
 const economyTicketPlus = document.getElementById('incress').addEventListener('click', function(){
-    ticketCounte(true);
+    ticketCount(true);
 });
 const economyTicketMinus = document.getElementById('dicress').addEventListener('click', function(){
-    ticketCounte(false);
+    ticketCount(false);
 });
 
 
